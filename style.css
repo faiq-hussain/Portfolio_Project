@@ -25,8 +25,8 @@
             font-family: 'Arial', sans-serif;
             background: var(--bg-dark);
             color: var(--text-light);
-            line-height: 1.6;
-            overflow-x: hidden;
+            line-height: 1.5;
+            /* overflow-x: hidden; */
         }
 
         /* Navigation */
@@ -349,26 +349,7 @@
             color: var(--text-gray);
         }
 
-        /* Animations */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* Focus styles for accessibility */
-        .nav-links a:focus,
-        .cta-button:focus,
-        .contact-link:focus,
-        .project-link:focus {
-            outline: 2px solid var(--primary-color);
-            outline-offset: 2px;
-        }
+        
 
         /* Mobile Navigation Toggle */
         .mobile-menu-toggle {
@@ -386,7 +367,6 @@
             transition: 0.3s;
         }
 
-        /* Responsive Design */
         @media (max-width: 1024px) {
             .about-content {
                 grid-template-columns: 1fr;
@@ -473,7 +453,6 @@
             }
         }
 
-        /* Extra small devices */
         @media (max-width: 320px) {
             .hero-content {
                 padding: 0.5rem;
@@ -500,7 +479,6 @@
             }
         }
 
-        /* Large screens optimization */
         @media (min-width: 1400px) {
             .section {
                 max-width: 1400px;
@@ -511,25 +489,5 @@
             }
         }
 
-        /* Print styles */
-        @media print {
-            .navbar,
-            .mobile-menu-toggle {
-                display: none;
-            }
 
-            .hero {
-                min-height: auto;
-                padding: 2rem 0;
-            }
-
-            body {
-                background: white;
-                color: black;
-            }
-
-            .section {
-                break-inside: avoid;
-            }
-        }
     
